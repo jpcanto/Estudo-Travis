@@ -1,0 +1,11 @@
+language: node_js
+# Informa qual linguagem será utilizada para os testes
+
+before_install: 
+- "export DISPLAY=:99.0"
+- "sh -e /etc/init.d/xvfb start"
+# Executa os testes feitos no navegador e cria uma interface gráfica
+
+node_js:
+- 'node'
+# Informa qual a versão da linguagem utilizada (caso não específicada, default = latest)
